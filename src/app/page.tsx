@@ -12,7 +12,7 @@ export default function Home () {
             <div>
               <h2 className='text-4xl font-bold mb-4'>Únete al club</h2>
               <p className='mb-4'>Descubre lo que el club de triatlón puede hacer por ti. Participa en eventos, entrena con un equipo y mejora tus habilidades.</p>
-              {session?.user?.email && <button onClick={() => signIn('google')} className='bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors duration-300'>Regístrate ahora</button>}
+              {!session?.user?.email && <button onClick={() => signIn('google')} className='bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors duration-300'>Regístrate ahora</button>}
             </div>
             <div>
               <Image className='rounded-lg shadow-md mb-4 object-fill w-full' alt='triatlon' width={200} height={200} src='/index/triatlon.jpg' />
@@ -45,7 +45,7 @@ export default function Home () {
         <div className='container mx-auto px-4 text-center'>
           <h2 className='text-4xl font-bold mb-4'>Únete hoy mismo</h2>
           <p className='mb-4'>No esperes más para formar parte del club de triatlón. Regístrate hoy y comienza a disfrutar de todos los beneficios.</p>
-          {session?.user?.email && <button onClick={() => signIn('google')} className='bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors duration-300'>Regístrate ahora</button>}
+          {!session?.user?.email && <button onClick={() => signIn('google')} className='bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors duration-300'>Regístrate ahora</button>}
         </div>
       </section>
     </div>
