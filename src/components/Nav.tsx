@@ -67,19 +67,20 @@ function Nav () {
             className='flex flex-col mt-4 border border-white rounded-lg bg-teal-700 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-teal-700'
           >
             {nav.map(item => (
-              <li
+              <Link
                 key={item.path}
-                className={`flex items-center h-10 p-2 gap-1 ${item.isActive ? 'text-teal-700 bg-cyan-300 font-bold md:text-cyan-300 md:bg-transparent hover:text-white md:hover:text-cyan-300 hover:cursor-pointer py-2 rounded md:hover:bg-transparent md:border-0 md:p-0' : 'text-neutral hover:bg-cyan-300/70 md:hover:text-cyan-300 hover:text-white hover:cursor-pointer py-2 rounded md:hover:bg-transparent md:border-0 md:p-0'}`}
+                href={item.path}
+                aria-current='page'
               >
-                {item.icon}
-                <Link
-                  href={item.path}
-                  className='md:hidden lg:block sm:block py-2 pl-3 pr-4 md:p-0'
-                  aria-current='page'
+                <li
+                  className={`flex items-center h-10 p-2 gap-1 ${item.isActive ? 'text-teal-700 bg-cyan-300 font-bold md:text-cyan-300 md:bg-transparent hover:text-white md:hover:text-cyan-300 hover:cursor-pointer py-2 rounded md:hover:bg-transparent md:border-0 md:p-0' : 'text-neutral hover:bg-cyan-300/70 md:hover:text-cyan-300 hover:text-white hover:cursor-pointer py-2 rounded md:hover:bg-transparent md:border-0 md:p-0'}`}
                 >
-                  {item.name}
-                </Link>
-              </li>
+                  {item.icon}
+                  <div className='md:hidden lg:block sm:block py-2 pl-3 pr-4 md:p-0'>
+                    {item.name}
+                  </div>
+                </li>
+              </Link>
             ))}
             <SessionButton />
           </ul>

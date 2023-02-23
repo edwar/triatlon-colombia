@@ -10,8 +10,8 @@ function about () {
           <div className='md:flex md:items-center md:justify-between mb-8'>
             <div className='md:w-1/2 md:mr-8'>
               <Image
-                width={200}
-                height={200}
+                width={600}
+                height={400}
                 src='/about/coach.jpg'
                 alt='Imagen del equipo de triatlón'
                 className='rounded-lg shadow-md mb-4 object-fill w-full'

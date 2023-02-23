@@ -15,7 +15,7 @@ export default function Home () {
               {!session?.user?.email && <button onClick={() => signIn('google')} className='bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors duration-300'>Regístrate ahora</button>}
             </div>
             <div>
-              <Image className='rounded-lg shadow-md mb-4 object-fill w-full' alt='triatlon' width={200} height={200} src='/index/triatlon.jpg' />
+              <Image className='rounded-lg shadow-md mb-4 object-fill w-full' alt='triatlon' width={600} height={400} src='/index/triatlon.jpg' />
             </div>
           </div>
         </div>
