@@ -2,10 +2,12 @@
 import { UserCircleIcon } from '@heroicons/react/24/outline'
 import { Dropdown } from 'flowbite-react'
 import { signIn, signOut, useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
 function SessionButton () {
   const { data: session } = useSession()
+  const { push } = useRouter()
   if (session?.user?.email) {
     return (
       <Dropdown
@@ -16,7 +18,7 @@ function SessionButton () {
             : <Image alt='profile' src='/user.png' width={30} height={30} />
 }
       >
-        <Dropdown.Header className='px-2 pr-10'>
+        <Dropdown.Header className='px-2'>
           <span className='block text-sm'>
             {session.user.name}
           </span>
@@ -24,14 +26,14 @@ function SessionButton () {
             {session.user.email}
           </span>
         </Dropdown.Header>
-        <Dropdown.Item className='px-2'>
+        <Dropdown.Item className='px-2' onClick={() => push('/dashboard')}>
           Tablero
         </Dropdown.Item>
         <Dropdown.Item className='px-2'>
           Configuraci&oacute;n
         </Dropdown.Item>
         <Dropdown.Divider />
-        <Dropdown.Item className='px-2' onClick={() => signOut()}>
+        <Dropdown.Item className='px-2' onClick={() => signOut({ redirect: true, callbackUrl: '/' })}>
           Cerrar sesi&oacute;n
         </Dropdown.Item>
       </Dropdown>

@@ -1,14 +1,8 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
 
 function about () {
   return (
     <div className='bg-gray-100 min-h-screen'>
-      <Head>
-        <title>Acerca de nosotros | Club Deportivo de Triatlón</title>
-      </Head>
-
       <section className='bg-white py-16'>
         <div className='container mx-auto px-4'>
           <h1 className='text-4xl font-bold mb-8'>Acerca de nosotros</h1>
@@ -48,7 +42,7 @@ function about () {
 
           <div>
             <h2 className='text-2xl font-bold mb-4'>Nuestro equipo</h2>
-            <ul className='flex justify-between list-none'>
+            <ul className='grid grid-cols-1 md:grid-cols-3 gap-8 list-none'>
               <li className='mb-4'>
                 <div className='flex items-center'>
                   <Image

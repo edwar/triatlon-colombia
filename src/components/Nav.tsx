@@ -1,5 +1,5 @@
 'use client'
-import { GlobeAsiaAustraliaIcon, Bars3Icon, HomeIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { GlobeAsiaAustraliaIcon, Bars3Icon, HomeIcon, UserGroupIcon, SparklesIcon, EyeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { useNav } from '@/hooks/useNav'
 import SessionButton from './SessionButton'
@@ -13,6 +13,14 @@ function Nav () {
     name: 'Nosotros',
     path: '/about',
     icon: <UserGroupIcon className='w-6 h-6' />
+  }, {
+    name: 'Misión',
+    path: '/mision',
+    icon: <SparklesIcon className='w-6 h-6' />
+  }, {
+    name: 'Visión',
+    path: '/vision',
+    icon: <EyeIcon className='w-6 h-6' />
   }])
 
   return (

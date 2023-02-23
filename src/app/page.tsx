@@ -41,7 +41,7 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='bg-gray-900 text-white py-12'>
+      <section className='bg-teal-700 text-white py-12'>
         <div className='container mx-auto px-4 text-center'>
           <h2 className='text-4xl font-bold mb-4'>Únete hoy mismo</h2>
           <p className='mb-4'>No esperes más para formar parte del club de triatlón. Regístrate hoy y comienza a disfrutar de todos los beneficios.</p>
