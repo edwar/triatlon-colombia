@@ -1,9 +1,14 @@
+import Image from 'next/image'
+
 function mision () {
   return (
     <div className='bg-gray-100 min-h-screen'>
       <section className='bg-gray-100 py-16'>
-        <div className='container mx-auto'>
+        <div className='container mx-auto px-4'>
           <h1 className='text-4xl font-bold text-center mb-8'>Nuestra Misión</h1>
+          <div className='flex justify-center'>
+            <Image src='/mision/mision.jpg' alt='mision' width={500} height={400} />
+          </div>
           <div className='max-w-4xl mx-auto'>
             <p className='text-xl text-gray-700 leading-relaxed'>
               En el Club Deportivo de Triatlón, nos esforzamos por promover un estilo de vida activo y saludable a través de la práctica del triatlón. Nuestra misión es proporcionar a nuestros miembros las herramientas, los recursos y la comunidad necesarios para alcanzar sus objetivos personales en el deporte del triatlón y más allá.
