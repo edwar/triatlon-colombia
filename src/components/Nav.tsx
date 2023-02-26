@@ -40,7 +40,7 @@ function Nav () {
           <span
             className='self-center text-xl font-semibold whitespace-nowrap text-white'
           >
-            Triatl&oacute;n Colombia
+            Boanerges
           </span>
         </Link>
         <button
