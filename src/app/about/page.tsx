@@ -7,7 +7,7 @@ function about () {
         <div className='container mx-auto px-4'>
           <h1 className='text-4xl font-bold mb-8'>Acerca de nosotros</h1>
 
-          <div className='md:flex md:items-center md:justify-between mb-8'>
+          <div className='md:flex md:items-start md:justify-between mb-8'>
             <div className='md:w-1/2 md:mr-8'>
               <Image
                 width={600}
@@ -19,17 +19,22 @@ function about () {
             </div>
             <div className='md:w-1/2'>
               <p className='text-gray-700 mb-4'>
-                Somos un club deportivo de triatlón dedicado a fomentar la práctica del deporte y el estilo de vida saludable.
+                El objeto prioritario del Club será la promoción, fomento y organización de las actividades deportivas, mediante la celebración de competiciones internas, la participación en eventos deportivos y la afiliación y participación en competiciones de las Ligas o Federaciones Nacionales correspondientes a los deportes: Triatlón. Natación. Ciclismo y Atletismo.
               </p>
               <p className='text-gray-700 mb-4'>
-                Desde nuestros inicios en 2010, nos hemos enfocado en brindar un espacio para que los atletas puedan entrenar, competir y hacer comunidad.
-              </p>
-              <p className='text-gray-700'>
-                Nuestro equipo está formado por atletas de diferentes edades y niveles, desde principiantes hasta triatletas experimentados. Todos son bienvenidos en nuestro club y nuestro objetivo es ayudar a cada uno de nuestros miembros a alcanzar sus metas deportivas.
+                Para el cumplimiento de su objeto el Club hace expreso sometimiento a la Ley 181 de 1995 o Ley del Deporte y a sus disposiciones reglamentarias y  declara la aceptación de las normas antidopaje.  Obtendrá y mantendrá vigente su reconocimiento deportivo, formará parte del Sistema Nacional del Deporte y en lo deportivo actuará bajo la inspección, control y vigilancia de Coldeportes.
               </p>
             </div>
           </div>
 
+          <div className='mb-8'>
+            <h2 className='text-2xl font-bold mb-4'>ARTICULO 3º OBJETIVOS GENERALES DEL CLUB DEPORTIVO DE TRIATLO BOANERGES.</h2>
+            <ul className='list-disc list-inside'>
+              <li className='text-gray-700 mb-2'>Buscar la integración de afiliados por medio del ejercicio físico y el Deporte, facilitando los lugares de encuentro, estancia y esparcimiento para la convivencia social, fomentando la integración cultural, la cordialidad y la amista entre sus integrantes.</li>
+              <li className='text-gray-700 mb-2'>Brindar por medio del personal profesional capacitado la enseñanza de los diferentes deportes, sus diferentes tácticas y técnicas en el desarrollo de la condición física de los asociados, teniendo en cuenta el avance y la mejora de la salud, los tiempos y la preparación física de forma objetiva.</li>
+              <li className='text-gray-700 mb-2'>Desarrollar competencias para conocer el nivel de los afiliados y deportistas del Club, participando en eventos municipales, regionales, Departamentales  y Nacionales con miras a competencias Internacionales de manera oficial.</li>
+            </ul>
+          </div>
           <div className='mb-8'>
             <h2 className='text-2xl font-bold mb-4'>Nuestros valores</h2>
             <ul className='list-disc list-inside'>

@@ -10,11 +10,8 @@ function mision () {
             <Image src='/mision/mision.jpg' alt='mision' width={500} height={400} />
           </div>
           <div className='max-w-4xl mx-auto'>
-            <p className='text-xl text-gray-700 leading-relaxed'>
-              En el Club Deportivo de Triatlón, nos esforzamos por promover un estilo de vida activo y saludable a través de la práctica del triatlón. Nuestra misión es proporcionar a nuestros miembros las herramientas, los recursos y la comunidad necesarios para alcanzar sus objetivos personales en el deporte del triatlón y más allá.
-            </p>
             <p className='text-xl text-gray-700 leading-relaxed mt-6'>
-              Nos enfocamos en fomentar un ambiente inclusivo y de apoyo para todos los niveles y edades, desde principiantes hasta atletas experimentados. Nos esforzamos por ser un ejemplo de excelencia deportiva y ética para nuestra comunidad y el mundo.
+              Crear una cultura entorno de la preparacion fisica y el Deporte, promoviendo la salud, estilos de vida saludable y brindando opciones para nuestros usuarios y atletas de realizar un sin numero de actividades fisicas, que permitan a cualquier persona tener un mejor estado de bienestar.
             </p>
           </div>
         </div>

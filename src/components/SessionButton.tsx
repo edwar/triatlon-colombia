@@ -29,6 +29,9 @@ function SessionButton () {
         <Dropdown.Item className='px-2' onClick={() => push('/dashboard')}>
           Tablero
         </Dropdown.Item>
+        <Dropdown.Item className='px-2' onClick={() => push('/rules')}>
+          Reglamento
+        </Dropdown.Item>
         <Dropdown.Item className='px-2'>
           Configuraci&oacute;n
         </Dropdown.Item>
